@@ -864,7 +864,7 @@ require('lazy').setup({
       }
     end,
     init = function()
-      vim.cmd.colorscheme 'duskfox'
+      vim.cmd.colorscheme 'terafox'
     end,
   },
 
