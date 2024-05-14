@@ -51,4 +51,10 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   end,
 })
 
+-- Some override for basic commands
+vim.keymap.set('n', 'n', 'nzzzv', { desc = 'Go to the next search result and center the view' })
+vim.keymap.set('n', 'N', 'Nzzzv', { desc = 'Go to the previous search result and center the view' })
+vim.keymap.set('n', '<C-d>', '<C-d>zz', { desc = 'Go down by a half page and then center the view' })
+vim.keymap.set('n', '<C-u>', '<C-u>zz', { desc = 'Go up by a half page and then center the view' })
+
 -- vim: ts=2 sts=2 sw=2 et
